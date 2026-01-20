@@ -1,0 +1,40 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "username": "Rahul",
+            "name": "Rahul Bhat",
+            "title": "test engineer",
+            "email": "rahul@example.com"
+        }
+    ],
+    "attendance": [
+        {
+            "id": 1,
+            "employeeId": 1,
+            "date": "2026-01-19",
+            "status": "Present",
+            "checkIn": "09:02",
+            "checkOut": "17:45"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "employeeId": 1,
+            "title": "Write Playwright tests",
+            "status": "In Progress",
+            "due": "2026-01-22",
+            "priority": "High"
+        },
+        {
+            "id": 2,
+            "employeeId": 1,
+            "title": "Fix Vite proxy for /api",
+            "status": "Open",
+            "due": "2026-01-20",
+            "priority": "Medium"
+        }
+    ]
+
+}
