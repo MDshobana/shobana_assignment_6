@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Provider, useDispatch, useSelector } from 'react-redux';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import store from './slices/store';
 import {
   userLoggedIn,
@@ -122,6 +123,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <LoginApp />
+      <SpeedInsights />
     </Provider>
   );
 }
