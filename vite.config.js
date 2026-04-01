@@ -10,7 +10,7 @@ export default defineConfig({
     strictPort: false,
     proxy: {
       '/api': { 
-        target: 'http://localhost:5000',
+        target: 'https://shobana-assignment-6.onrender.com',
         changeOrigin: true, 
       },
     },
