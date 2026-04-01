@@ -2,6 +2,7 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import jwt from "jsonwebtoken";
 import db from "./employeeInfo.json" with { type: "json" };
+import cors from "cors";
 
 const app = express();
 
