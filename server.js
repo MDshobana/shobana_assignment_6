@@ -9,6 +9,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))   //middleware
 app.use(cookieParser())  //middleware
 
+
+app.use(cors({
+    origin: [
+      "http://localhost:5173",
+      "https://shobana-assignment-6.vercel.app"
+    ],
+    methods: ["GET", "POST"],
+    credentials: true
+  }));
+
+
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
