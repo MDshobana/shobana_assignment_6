@@ -39,7 +39,7 @@ function LoginForm() {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch('https://shobana-assignment-6.onrender.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: userName, password: passWord }),
