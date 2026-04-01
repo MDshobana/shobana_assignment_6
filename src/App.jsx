@@ -43,6 +43,7 @@ function LoginForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: userName, password: passWord }),
+        mode:"cors"
       });
 
       
